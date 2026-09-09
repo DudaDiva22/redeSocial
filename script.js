@@ -8,4 +8,19 @@ document.addEventListener( "DOMContentLoade"), ()=>{
 
     let isLiked = false;
     let baseLikes = 0;
+
+    //texto inicial
+
+    if(likesCountSpan){
+        likesCountSpan.textContent = "0";
+    }
+    
+    //numeros acima de 1mil
+
+    function formatLikes (num) {
+        if(num >=1000){
+            return (num/1000).toFixed(1)+"K";
+        }
+        
+    }
 }
